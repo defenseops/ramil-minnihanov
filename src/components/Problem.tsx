@@ -54,9 +54,9 @@ export default function Problem() {
             >
               Узнаёшь
               <br />
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span>
                 себя?
-              </em>
+              </span>
             </h2>
           </div>
           <p
@@ -82,8 +82,8 @@ export default function Problem() {
               onMouseEnter={() => setActive(i)}
               style={{
                 display: "grid",
-                gridTemplateColumns: "100px minmax(0, 1fr) 56px",
-                gap: 32,
+                gridTemplateColumns: "56px minmax(0, 1fr) 56px",
+                gap: 24,
                 alignItems: "center",
                 padding: `clamp(20px, 2.4vw, 32px) 0 clamp(20px, 2.4vw, 32px) ${active === i ? "24px" : "0"}`,
                 borderTop: "1px solid var(--rule)",
@@ -117,6 +117,7 @@ export default function Problem() {
                 {text}
               </div>
               <div
+                className="problem-arrow"
                 style={{
                   justifySelf: "end",
                   width: 40,

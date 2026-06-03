@@ -190,9 +190,9 @@ export default function Services({ onCta }: { onCta: () => void }) {
               }}
             >
               Форматы{" "}
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span>
                 работы
-              </em>
+              </span>
             </h2>
           </div>
           <div

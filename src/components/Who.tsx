@@ -44,9 +44,9 @@ export default function Who() {
               }}
             >
               Для{" "}
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span>
                 кого
-              </em>
+              </span>
             </h2>
             <p
               style={{
@@ -65,6 +65,7 @@ export default function Who() {
             {ITEMS.map((text, i) => (
               <div
                 key={text}
+                className="who-tag"
                 style={{
                   display: "inline-flex",
                   alignItems: "center",

@@ -193,9 +193,9 @@ export default function ContactForm() {
               }}
             >
               Готов навести{" "}
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span>
                 порядок
-              </em>{" "}
+              </span>{" "}
               в финансах?
             </h2>
             <p

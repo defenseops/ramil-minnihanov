@@ -45,9 +45,9 @@ export default function How() {
           }}
         >
           Как проходит{" "}
-          <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+          <span>
             работа
-          </em>
+          </span>
         </h2>
 
         <div
@@ -172,8 +172,8 @@ export default function How() {
             <blockquote
               style={{
                 margin: 0,
-                fontFamily: "'Newsreader', serif",
-                fontStyle: "italic",
+                fontFamily: "'Bricolage Grotesque', sans-serif",
+                
                 fontWeight: 400,
                 fontSize: "clamp(26px, 3vw, 52px)",
                 lineHeight: 1.15,

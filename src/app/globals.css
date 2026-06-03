@@ -66,35 +66,78 @@ body {
   transform: translateY(0);
 }
 
+/* ── Tablet (≤ 1024px) ── */
 @media (max-width: 1024px) {
   .ed-nav { display: none !important; }
   .problem-head { grid-template-columns: 1fr !important; align-items: start !important; }
-  .problem-list li { grid-template-columns: 70px minmax(0,1fr) 40px !important; gap: 18px !important; }
   .services-grid { grid-template-columns: 1fr !important; }
   .services-head { grid-template-columns: 1fr !important; }
   .services-meta { text-align: left !important; }
   .who-layout { grid-template-columns: 1fr !important; }
   .how-grid { grid-template-columns: repeat(2, 1fr) !important; row-gap: 48px !important; }
   .how-line { display: none !important; }
+  .how-banner { grid-template-columns: 1fr !important; }
   .about-grid { grid-template-columns: 1fr !important; }
   .about-figure { aspect-ratio: 4/3 !important; }
-  .pricing-row { grid-template-columns: auto 1fr !important; row-gap: 18px !important; }
-  .pricing-cta { grid-column: 1 / -1; padding-left: 72px; }
   .manifesto-grid { grid-template-columns: 1fr !important; }
-}
-
-@media (max-width: 880px) {
   .contact-layout { grid-template-columns: 1fr !important; }
+  /* Pricing — убираем колонку времени, кнопка вниз */
+  .pricing-row {
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    row-gap: 16px !important;
+  }
+  .pricing-price { grid-column: 2 !important; }
+  .pricing-time  { display: none !important; }
+  .pricing-cta   { grid-column: 2 !important; padding-left: 0 !important; }
 }
 
-@media (max-width: 720px) {
-  .nav-name { display: none !important; }
-  .how-grid { grid-template-columns: 1fr !important; }
-  .footer-grid { grid-template-columns: 1fr !important; }
-  .about-stats { grid-template-columns: repeat(2, 1fr) !important; gap: 14px 0 !important; }
+/* ── Mobile (≤ 640px) ── */
+@media (max-width: 640px) {
+  /* Nav */
+  .ed-nav { display: none !important; }
+
+  /* Hero */
+  .hero-copy { grid-template-columns: 1fr !important; }
   .hero-meta { grid-template-columns: repeat(2, 1fr) !important; }
   .scroll-cue { display: none !important; }
-  .cta-row { flex-direction: column; align-items: flex-start; }
-  .hero-copy { grid-template-columns: 1fr !important; }
+
+  /* Problem list — компактнее */
+  .problem-list li {
+    grid-template-columns: 40px minmax(0, 1fr) !important;
+    gap: 14px !important;
+  }
+  .problem-arrow { display: none !important; }
+
+  /* Services — одна колонка */
+  .services-grid { grid-template-columns: 1fr !important; }
+
+  /* Pricing — стек */
+  .pricing-row {
+    grid-template-columns: 1fr !important;
+    row-gap: 12px !important;
+  }
+  .pricing-num   { display: none !important; }
+  .pricing-time  { display: none !important; }
+  .pricing-cta   { grid-column: 1 !important; padding-left: 0 !important; margin-top: 4px; }
+
+  /* Who — теги меньше */
+  .who-tag {
+    font-size: 15px !important;
+    padding: 14px 18px !important;
+  }
+
+  /* How */
+  .how-grid { grid-template-columns: 1fr !important; row-gap: 40px !important; }
   .how-banner { grid-template-columns: 1fr !important; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr !important; }
+  .about-figure { aspect-ratio: 3/4 !important; max-height: 420px !important; }
+  .about-stats { grid-template-columns: repeat(2, 1fr) !important; gap: 14px 0 !important; }
+
+  /* Contact */
+  .contact-layout { grid-template-columns: 1fr !important; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr !important; }
 }

@@ -105,7 +105,7 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
               }}
             >
               Финансы{" "}
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>под контролем</em>
+              <span>под контролем</span>
               <br />
               Решения для роста.
             </h2>
@@ -136,6 +136,7 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
               }}
             >
               <div
+                className="pricing-num"
                 style={{
                   fontFamily: "'Bricolage Grotesque', sans-serif",
                   fontWeight: 500,
@@ -169,7 +170,7 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
                 </p>
               </div>
 
-              <div>
+              <div className="pricing-price">
                 <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--accent)" }}>
                   Стоимость
                 </span>
@@ -193,7 +194,7 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
                 )}
               </div>
 
-              <div>
+              <div className="pricing-time">
                 <span style={{ fontSize: 11, fontWeight: 600, letterSpacing: ".22em", textTransform: "uppercase", color: "var(--accent)" }}>
                   {r.timeLabel}
                 </span>

@@ -84,9 +84,9 @@ export default function About() {
               }}
             >
               Рамиль{" "}
-              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 400 }}>
+              <span>
                 Минниханов
-              </em>
+              </span>
             </h2>
 
             <p
@@ -107,8 +107,8 @@ export default function About() {
                 margin: "32px 0 0",
                 padding: "0 0 0 24px",
                 borderLeft: "2px solid var(--accent)",
-                fontFamily: "'Newsreader', serif",
-                fontStyle: "italic",
+                fontFamily: "'Bricolage Grotesque', sans-serif",
+                
                 fontSize: "clamp(20px, 1.8vw, 26px)",
                 lineHeight: 1.3,
                 color: "var(--ink)",
