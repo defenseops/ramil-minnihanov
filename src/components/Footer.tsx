@@ -1,14 +1,4 @@
-function Monogram() {
-  return (
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden>
-      <circle cx="16" cy="16" r="15.25" stroke="var(--ink)" strokeWidth="1" />
-      <path
-        d="M9 22 L 11 10 L 14 10 L 16 18 L 18 10 L 21 10 L 22 22 L 19.5 22 L 19 14 L 17 22 L 15 22 L 13 14 L 12.5 22 Z"
-        fill="var(--ink)"
-      />
-    </svg>
-  );
-}
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -32,18 +22,14 @@ export default function Footer() {
           }}
         >
           <div>
-            <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
-              <Monogram />
-              <div
-                style={{
-                  fontFamily: "'Bricolage Grotesque', sans-serif",
-                  fontWeight: 500,
-                  fontSize: 22,
-                  letterSpacing: "-0.015em",
-                }}
-              >
-                Рамиль Минниханов
-              </div>
+            <div style={{ marginBottom: 16 }}>
+              <Image
+                src="/logo-rm.png"
+                alt="Рамиль Минниханов — логотип"
+                width={140}
+                height={70}
+                style={{ objectFit: "contain" }}
+              />
             </div>
             <p style={{ fontSize: 14, color: "var(--ink-soft)", margin: 0, lineHeight: 1.55, maxWidth: 360 }}>
               Антикризисная система управления бизнесом. Финансы малого и среднего бизнеса в&nbsp;Казахстане.
