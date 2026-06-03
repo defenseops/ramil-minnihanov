@@ -20,6 +20,13 @@ html {
   background: var(--bg);
 }
 
+/* Курсивный акцент — жирный и крупнее */
+h1 em, h2 em {
+  font-size: 1.18em;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
 body {
   background: var(--bg);
   color: var(--ink);
@@ -95,6 +102,8 @@ body {
 @media (max-width: 640px) {
   /* Nav */
   .ed-nav { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .nav-logo { width: 64px !important; height: 32px !important; }
 
   /* Hero */
   .hero-copy { grid-template-columns: 1fr !important; }

@@ -34,9 +34,9 @@ export default function Manifesto() {
             }}
           >
             Финансы — это не интуиция и не Excel.{" "}
-            <span>
+            <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>
               Это система,
-            </span>{" "}
+            </em>{" "}
             которая работает без постоянного участия владельца.
           </h2>
         </div>

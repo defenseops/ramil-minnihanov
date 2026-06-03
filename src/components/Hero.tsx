@@ -157,9 +157,9 @@ export default function Hero({ onCta }: { onCta: () => void }) {
               }}
             >
               «Соберу понятную систему контроля{" "}
-              <span>
+              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>
                 прибыли, расходов и движения денег
-              </span>
+              </em>
               {" "}— всего за&nbsp;7&nbsp;дней»
             </h1>
 

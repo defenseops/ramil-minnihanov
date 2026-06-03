@@ -44,9 +44,7 @@ export default function Who() {
               }}
             >
               Для{" "}
-              <span>
-                кого
-              </span>
+              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>кого</em>
             </h2>
             <p
               style={{

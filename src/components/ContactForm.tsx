@@ -193,9 +193,7 @@ export default function ContactForm() {
               }}
             >
               Готов навести{" "}
-              <span>
-                порядок
-              </span>{" "}
+              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>порядок</em>{" "}
               в финансах?
             </h2>
             <p

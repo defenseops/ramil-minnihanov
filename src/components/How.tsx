@@ -45,9 +45,7 @@ export default function How() {
           }}
         >
           Как проходит{" "}
-          <span>
-            работа
-          </span>
+          <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>работа</em>
         </h2>
 
         <div

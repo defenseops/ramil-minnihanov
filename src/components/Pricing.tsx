@@ -105,7 +105,7 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
               }}
             >
               Финансы{" "}
-              <span>под контролем</span>
+              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>под контролем</em>
               <br />
               Решения для роста.
             </h2>

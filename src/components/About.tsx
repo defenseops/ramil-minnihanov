@@ -83,10 +83,7 @@ export default function About() {
                 margin: "18px 0 0",
               }}
             >
-              Рамиль{" "}
-              <span>
-                Минниханов
-              </span>
+              Рамиль Минниханов
             </h2>
 
             <p

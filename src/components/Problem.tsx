@@ -54,9 +54,7 @@ export default function Problem() {
             >
               Узнаёшь
               <br />
-              <span>
-                себя?
-              </span>
+              <em style={{ fontFamily: "'Newsreader', serif", fontStyle: "italic", fontWeight: 700 }}>себя?</em>
             </h2>
           </div>
           <p
