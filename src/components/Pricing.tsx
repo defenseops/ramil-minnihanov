@@ -250,6 +250,113 @@ export default function Pricing({ onCta }: { onCta: () => void }) {
               </button>
             </div>
           ))}
+
+          {/* Mobile cards — shown only on mobile via CSS */}
+          <div className="pricing-cards">
+            {ROWS.map((r) => (
+              <div
+                key={r.n}
+                style={{
+                  border: "1px solid rgba(244,239,228,.16)",
+                  borderRadius: 16,
+                  padding: "24px 20px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 16,
+                }}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                  <h3
+                    style={{
+                      fontFamily: "'Bricolage Grotesque', sans-serif",
+                      fontWeight: 500,
+                      fontSize: 20,
+                      lineHeight: 1.2,
+                      color: "var(--on-accent)",
+                      margin: 0,
+                      whiteSpace: "pre-line",
+                      letterSpacing: "-0.015em",
+                      flex: 1,
+                    }}
+                  >
+                    {r.title}
+                  </h3>
+                  <span
+                    style={{
+                      fontFamily: "'Bricolage Grotesque', sans-serif",
+                      fontWeight: 500,
+                      fontSize: 28,
+                      color: "var(--accent)",
+                      letterSpacing: "-0.02em",
+                      lineHeight: 1,
+                      marginLeft: 12,
+                      flexShrink: 0,
+                    }}
+                  >
+                    {r.n}
+                  </span>
+                </div>
+
+                <p style={{ fontSize: 14, lineHeight: 1.55, color: "rgba(244,239,228,.62)", margin: 0 }}>
+                  {r.desc}
+                </p>
+
+                <div
+                  style={{
+                    background: "rgba(244,239,228,.06)",
+                    borderRadius: 10,
+                    padding: "14px 16px",
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    gap: 12,
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: ".18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 4 }}>
+                      Стоимость
+                    </div>
+                    <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 600, fontSize: 16, color: "var(--on-accent)", lineHeight: 1.2 }}>
+                      {r.priceMain}
+                    </div>
+                    {r.priceSub && (
+                      <div style={{ fontSize: 11, color: "rgba(244,239,228,.5)", marginTop: 3 }}>{r.priceSub}</div>
+                    )}
+                  </div>
+                  {r.timeMain && (
+                    <div style={{ textAlign: "right" }}>
+                      <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: ".18em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 4 }}>
+                        {r.timeLabel}
+                      </div>
+                      <div style={{ fontFamily: "'Bricolage Grotesque', sans-serif", fontWeight: 600, fontSize: 16, color: "var(--on-accent)" }}>
+                        {r.timeMain}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <button
+                  onClick={onCta}
+                  style={{
+                    appearance: "none",
+                    cursor: "pointer",
+                    border: "1px solid var(--accent)",
+                    background: "transparent",
+                    color: "var(--accent)",
+                    padding: "14px",
+                    borderRadius: 999,
+                    fontSize: 13,
+                    fontWeight: 600,
+                    letterSpacing: ".1em",
+                    textTransform: "uppercase",
+                    width: "100%",
+                  }}
+                >
+                  Записаться →
+                </button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

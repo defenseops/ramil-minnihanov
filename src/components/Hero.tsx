@@ -70,9 +70,10 @@ export default function Hero({ onCta }: { onCta: () => void }) {
           alt="Рамиль Минниханов — финансовый консультант, Алматы, Казахстан"
           fill
           priority
+          className="hero-photo"
           style={{
             objectFit: "cover",
-            objectPosition: "right 15%",
+            objectPosition: "80% 15%",
             filter: "saturate(.9) contrast(1.02) brightness(.96)",
           }}
         />
@@ -164,6 +165,7 @@ export default function Hero({ onCta }: { onCta: () => void }) {
             </h1>
 
             <p
+              className="hero-desc"
               style={{
                 fontSize: "clamp(14px, 1.1vw, 17px)",
                 lineHeight: 1.55,
@@ -173,7 +175,7 @@ export default function Hero({ onCta }: { onCta: () => void }) {
                 textShadow: "0 1px 20px rgba(0,0,0,.5)",
               }}
             >
-              Помогаю собственникам малого и среднего бизнеса в Казахстане: офлайн и онлайн магазины, производства, сервисные компании, медицинские и учебные центры, компании с филиальной сетью и Kaspi‑магазины.
+              Малый и средний бизнес в Казахстане — офлайн, онлайн, производства, сервис.
             </p>
 
             <div

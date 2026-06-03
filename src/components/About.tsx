@@ -26,13 +26,13 @@ export default function About() {
             }}
           >
             <Image
-              src="/images/ramil-3.jpg"
+              src="/images/ramil-about.jpg"
               alt="Рамиль Минниханов — финансовый консультант, Алматы, Казахстан"
               fill
               style={{
                 objectFit: "cover",
-                objectPosition: "center 15%",
-                filter: "saturate(.7) contrast(1.04) brightness(.93)",
+                objectPosition: "center 10%",
+                filter: "saturate(.8) contrast(1.03) brightness(.95)",
               }}
             />
             <div

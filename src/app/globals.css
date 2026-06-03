@@ -98,6 +98,9 @@ body {
   .pricing-cta   { grid-column: 2 !important; padding-left: 0 !important; }
 }
 
+/* Pricing cards — hidden on desktop, shown on mobile */
+.pricing-cards { display: none; }
+
 /* ── Mobile (≤ 640px) ── */
 @media (max-width: 640px) {
   /* Nav */
@@ -105,9 +108,17 @@ body {
   .nav-burger { display: flex !important; }
   .nav-logo { width: 64px !important; height: 32px !important; }
 
+  /* Hero photo — shift right so face is visible */
+  .hero-photo { object-position: 90% 15% !important; }
+
+  /* Pricing — hide table rows, show cards */
+  .pricing-row { display: none !important; }
+  .pricing-cards { display: flex !important; flex-direction: column; gap: 16px; margin-top: 32px; }
+
   /* Hero */
   .hero-copy { grid-template-columns: 1fr !important; }
   .hero-meta { grid-template-columns: repeat(2, 1fr) !important; }
+  .hero-desc { display: none !important; }
   .scroll-cue { display: none !important; }
 
   /* Problem list — компактнее */
