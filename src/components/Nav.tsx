@@ -53,8 +53,8 @@ export default function Nav() {
           <Image
             src="/logo-rm.png"
             alt="Рамиль Минниханов"
-            width={110}
-            height={55}
+            width={80}
+            height={40}
             className="nav-logo"
             style={{ objectFit: "contain" }}
           />

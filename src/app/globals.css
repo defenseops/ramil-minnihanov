@@ -106,7 +106,7 @@ body {
   /* Nav */
   .ed-nav { display: none !important; }
   .nav-burger { display: flex !important; }
-  .nav-logo { width: 64px !important; height: 32px !important; }
+  .nav-logo { width: 48px !important; height: 24px !important; }
 
   /* Hero photo — shift right so face is visible */
   .hero-photo { object-position: 90% 15% !important; }

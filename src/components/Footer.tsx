@@ -26,8 +26,8 @@ export default function Footer() {
               <Image
                 src="/logo-rm.png"
                 alt="Рамиль Минниханов — логотип"
-                width={140}
-                height={70}
+                width={100}
+                height={50}
                 style={{ objectFit: "contain" }}
               />
             </div>
